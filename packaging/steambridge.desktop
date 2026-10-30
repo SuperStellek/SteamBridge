@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SteamBridge
+Comment=Use the 2026 Steam Controller outside Steam
+Exec=steambridge
+Icon=input-gaming
+Terminal=false
+Categories=Game;Utility;

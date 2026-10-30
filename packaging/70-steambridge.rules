@@ -1,0 +1,3 @@
+# Seat-local access. Never grant world-writable input access.
+SUBSYSTEM=="misc", KERNEL=="uinput", OPTIONS+="static_node=uinput", TAG+="uaccess"
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{id/vendor}=="28de", ATTRS{id/product}=="130[2345]", TAG+="uaccess"

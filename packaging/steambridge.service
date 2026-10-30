@@ -1,0 +1,12 @@
+[Unit]
+Description=Steam Controller 2026 virtual Xbox gamepad bridge
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/steambridge --headless
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target
